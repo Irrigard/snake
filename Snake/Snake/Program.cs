@@ -10,22 +10,19 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            int x1 = 1;
-            int y1 = 3;
-            char sum1 = '*';
-            Drow(x1, y1, sum1);
+            point p1 = new point();
+            p1.x = 1;
+            p1.y = 3;
+            p1.sum = '*';
+            p1.Drow();
 
-            int x2 = 4;
-            int y2 = 5;
-            char sum2 = '#';
-            Drow(x2, y2, sum2);
+            point p2 = new point();
+            p2.x = 4;
+            p2.y = 5;
+            p2.sum = '#';
+            p2.Drow();
+
             Console.ReadLine();
         }
-        static void Drow(int x, int y, char sum)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sum);
-        }
-
     }
 }
